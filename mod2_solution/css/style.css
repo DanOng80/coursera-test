@@ -1,0 +1,73 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+font font-size: 16px;
+}
+
+h1 {
+text-align: center;	
+font-size: 175%;
+margin-bottom: 40px;
+margin-top: 40px;
+}
+
+h3 {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 125%;
+}
+
+p {
+	margin-top: 40px;
+	padding: 10px;
+}
+
+.chicken {
+	background-color: #e6a1e6;	
+}
+
+.beef {
+	background-color: #e04564;
+}
+
+.fish {
+	background-color: #e6cf71;
+}
+.item1, .item2, .item3 {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #8d8f8c;
+  margin: 1%;
+  width: 31.3%;
+  border: 1px solid black;   
+  float: right;
+  overflow: hidden; 
+  
+}
+
+.chicken, .beef, .fish {
+width: 150px;
+padding: 5px 0;
+border-left: 1px solid black;
+border-bottom: 1px solid black;
+float: right;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.item3 {
+	clear: right;
+	width: 98%
+	}
+	.item1, .item2 {
+	width: 48%
+	}
+}
+
+@media (max-width: 767px) {
+	.item1, .item2, .item3 {
+	float: left;
+    margin-left: 25px;
+    margin-right: 25px;
+	width: 90%;
+	}
+}
